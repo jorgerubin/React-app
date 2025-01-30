@@ -16,7 +16,7 @@ jobs:
       - name: 'Test'
         run: |
           npm i
-          npm audit
+          npm audit --force
           npm test
       - name: SonarQube Scan
         uses: SonarSource/sonarqube-scan-action@v4
