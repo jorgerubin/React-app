@@ -1,6 +1,5 @@
 import { render, screen } from '@testing-library/react';
 import Homepage from './Pages/Homepages';
-import data from "./data.json";
 
 test('Existe News', () => {
   render(<Homepage />);
