@@ -25,6 +25,7 @@ spec:
             limits:
               memory: "512Mi"
               cpu: "500m"
+              ephemeral-storage: "2Gi"
           volumeMounts:
             - name: uptime-kuma-data
               mountPath: /app/data
