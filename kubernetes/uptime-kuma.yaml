@@ -28,10 +28,12 @@ spec:
           volumeMounts:
             - name: uptime-kuma-data
               mountPath: /app/data
+      automountServiceAccountToken: false
       volumes:
         - name: uptime-kuma-data
           persistentVolumeClaim:
             claimName: uptime-kuma-pvc
+      
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
